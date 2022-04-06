@@ -32,7 +32,7 @@ public class Main {
                 display(chain.a());
                 display(chain.b());
             }
-            // Sad cause we can't know it at compile time but "pattern matching" can't tell it ATM
+            // Sad cause we can know it at compile time but "pattern matching" can't tell it ATM
             default -> throw new UnsupportedOperationException("Unsupported value : " + command);
         }
     }
